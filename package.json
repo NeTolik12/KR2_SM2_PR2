@@ -1,15 +1,19 @@
 {
   "name": "react-shop",
   "private": true,
+  "homepage": "https://netolik12.github.io/KR2_SM2_PR2/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "materialize-css": "^1.0.0-rc.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
